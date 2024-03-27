@@ -1,0 +1,20 @@
+﻿<Window x:Class="lastpraktika.Change"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lastpraktika"
+        mc:Ignorable="d"
+        Title="Change" Height="401" Width="511" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="242,85,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Type" HorizontalAlignment="Left" Margin="242,140,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Cel" HorizontalAlignment="Left" Margin="242,197,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="OB" HorizontalAlignment="Left" Margin="242,253,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Название" HorizontalAlignment="Left" Margin="154,81,0,0" VerticalAlignment="Top"/>
+        <Label Content="Типовое" HorizontalAlignment="Left" Margin="154,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Цель" HorizontalAlignment="Left" Margin="166,193,0,0" VerticalAlignment="Top"/>
+        <Label Content="Объём" HorizontalAlignment="Left" Margin="160,249,0,0" VerticalAlignment="Top"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="256,320,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="lastpraktika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lastpraktika"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <TabControl>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>Tab 1</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <StackPanel>
+                    <DataGrid x:Name="DG" Height="80"></DataGrid>
+                    <Button Content="Создать" Click="Add_Click"/>
+                    <Button Content="Редактировать" Click="Change_Click"/>
+                    <Button Content="Удалить" Click="Delete_Click"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Tab 2">
+                <DataGrid x:Name="DG2" Margin="0,0,0,319"></DataGrid>
+               
+            </TabItem>
+            <TabItem Header="Tab3">
+                <DataGrid x:Name="DG3"></DataGrid>
+            </TabItem>
+            <TabItem Header="Tab4">
+                <DataGrid x:Name="DG4"></DataGrid>
+            </TabItem>
+            <TabItem Header="Tab5">
+                <DataGrid x:Name="DG5"></DataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
